@@ -4,9 +4,9 @@ namespace App\ShoppingCart;
 
 class Item
 {
-    private $name;
-    private $price;
-    private $quantity;
+    private string $name;
+    private float $price;
+    private int $quantity;
 
     public function __construct($name, $price, $quantity) { //utilizado construtor
         $this->name = $name;
@@ -15,7 +15,7 @@ class Item
     }
 
     public function getName(){ //utilizado para encapsular e boas práticas de programação
-        return $this->name;
+        return $this->name; // retorna o valor da propriedade name
     }
     public function getPrice() {
         return $this->price;
@@ -23,7 +23,7 @@ class Item
     public function getQuantity() {
         return $this->quantity;
     }
-    public function setName($name){
+    public function setName($name){ //defina o valor da propriedade name
         $this->name = $name;
     }
     public function setPrice($price){

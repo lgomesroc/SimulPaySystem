@@ -5,6 +5,7 @@
     class Cart
     {
         private $items = []; // armazena os items
+        
         public function addItem($item) {
             $this->items[] = $item;
         }
